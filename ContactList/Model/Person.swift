@@ -17,7 +17,7 @@ struct Person {
         "\(name) \(surName)"
     }
     
-    static func getListPerson() -> [Person] {
+    static func getPerson() -> [Person] {
         var persons: [Person] = []
         
         let names = DataManager.info.names.shuffled()
@@ -37,6 +37,5 @@ struct Person {
         }
         return persons
     }
-    
 }
 
